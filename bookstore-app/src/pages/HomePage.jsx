@@ -1,5 +1,5 @@
 import React from "react";
-import {Link, link} from "react-router-dom";
+import { Link } from "react-router-dom";  // แก้จาก 'link' เป็น 'Link'
 
 import './style/HomePage.css';
 
@@ -7,9 +7,9 @@ const Homepage = () => {
     return(
         <div>
             <h1>Welcome to the Bookstore</h1>
-            <p>This is the home page of the bookstore application</p>
+            <p>This is the homepage of the bookstore application</p>
             <p>Explore our collection of books and find your next read!</p>
-            <Link> to="/books"</Link>
+            <Link to="/books">Go to Books </Link>  {/* ใช้ 'to' เพื่อไปยังหน้า /books */}
         </div>
     )
 }
